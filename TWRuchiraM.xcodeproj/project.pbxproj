@@ -1,0 +1,974 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		38E7DFB3B3C0E20B9C62FC06 /* Pods_TemperJSearchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 178D98939C05998C354D2767 /* Pods_TemperJSearchTests.framework */; };
+		6E4C3C4D79397A64758B2069 /* Pods_TemperJSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3195131D9135B6E75DB2C5EB /* Pods_TemperJSearch.framework */; };
+		E89D692DE5BEB4121ADD825D /* Pods_TemperJSearchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C7E055BAA7CD05E474B4F71 /* Pods_TemperJSearchUITests.framework */; };
+		EAAEBEF322EB4A1000D779A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAEBEF222EB4A1000D779A8 /* AppDelegate.swift */; };
+		EAAEBEFA22EB4A1400D779A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAAEBEF922EB4A1400D779A8 /* Assets.xcassets */; };
+		EAAEBF1322EB4A1400D779A8 /* TemperJSearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAEBF1222EB4A1400D779A8 /* TemperJSearchUITests.swift */; };
+		EAAEBF2822EB500E00D779A8 /* JSTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAEBF2722EB500E00D779A8 /* JSTableViewController.swift */; };
+		EAC08ABF22EC0834004AD85E /* JSViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC08ABE22EC0834004AD85E /* JSViewModel.swift */; };
+		EAC08AC222EC0CBB004AD85E /* TWContractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC08AC122EC0CBB004AD85E /* TWContractor.swift */; };
+		EAC08AC522EC36D9004AD85E /* DatePickerControlViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC08AC422EC36D9004AD85E /* DatePickerControlViewModel.swift */; };
+		EAC08AC922EC5CA7004AD85E /* DatePickerControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC08AC822EC5CA7004AD85E /* DatePickerControl.swift */; };
+		EAC08ACB22EC7570004AD85E /* DatePickerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC08ACA22EC7570004AD85E /* DatePickerCollectionViewCell.swift */; };
+		EAC08ACE22EC894F004AD85E /* TextLabelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC08ACD22EC894F004AD85E /* TextLabelCollectionViewCell.swift */; };
+		EAC08AD022EC9B3E004AD85E /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC08ACF22EC9B3E004AD85E /* CardTableViewCell.swift */; };
+		EAC08AD222ECAC28004AD85E /* JSCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC08AD122ECAC28004AD85E /* JSCardTableViewCell.swift */; };
+		EAC08AD522ECB4F5004AD85E /* ICNLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC08AD422ECB4F5004AD85E /* ICNLabel.swift */; };
+		EAC08AD722ED3CBE004AD85E /* JSTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC08AD622ED3CBE004AD85E /* JSTableViewHeader.swift */; };
+		EAC08ADB22ED47EE004AD85E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EAC08AD922ED47EE004AD85E /* Localizable.strings */; };
+		EAC08ADF22EDB1FF004AD85E /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC08ADE22EDB1FF004AD85E /* ShadowView.swift */; };
+		EAC08AE222EDF3E4004AD85E /* TWServerClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC08AE122EDF3E4004AD85E /* TWServerClient.swift */; };
+		EAC08AE422EDFC12004AD85E /* TWDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC08AE322EDFC12004AD85E /* TWDate.swift */; };
+		EAC08AE622EDFC9E004AD85E /* TWLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC08AE522EDFC9E004AD85E /* TWLocation.swift */; };
+		EAC08AE822EDFD39004AD85E /* TWClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC08AE722EDFD39004AD85E /* TWClient.swift */; };
+		EAC08AEA22EDFD9A004AD85E /* TWPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC08AE922EDFD9A004AD85E /* TWPhoto.swift */; };
+		EAC08AEC22EDFEAA004AD85E /* TWJobCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC08AEB22EDFEAA004AD85E /* TWJobCategory.swift */; };
+		EAC08AEE22EDFF28004AD85E /* TWShift.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC08AED22EDFF28004AD85E /* TWShift.swift */; };
+		EAC08AF022EE087E004AD85E /* TWResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC08AEF22EE087E004AD85E /* TWResponse.swift */; };
+		EAC08AF222EEC4F5004AD85E /* JSViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC08AF122EEC4F5004AD85E /* JSViewModelTests.swift */; };
+		EAC08AF422EEC549004AD85E /* DatePickerControlViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC08AF322EEC549004AD85E /* DatePickerControlViewModelTests.swift */; };
+		EAC08AF822EECA4B004AD85E /* TWShift.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC08AF722EECA4B004AD85E /* TWShift.swift */; };
+		EAC08AFA22EECA5E004AD85E /* TWJobCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC08AF922EECA5E004AD85E /* TWJobCategory.swift */; };
+		EAC08AFC22EECA74004AD85E /* TWContractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC08AFB22EECA74004AD85E /* TWContractor.swift */; };
+		EAC08AFE22EECA80004AD85E /* TWDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC08AFD22EECA80004AD85E /* TWDate.swift */; };
+		EAC08B0022EECA93004AD85E /* TWLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC08AFF22EECA93004AD85E /* TWLocation.swift */; };
+		EAC08B0222EECAA2004AD85E /* TWClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC08B0122EECAA2004AD85E /* TWClient.swift */; };
+		EAC08B0422EECAB2004AD85E /* TWPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC08B0322EECAB2004AD85E /* TWPhoto.swift */; };
+		EAC08B0622EED56E004AD85E /* MockTWServerClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC08B0522EED56E004AD85E /* MockTWServerClient.swift */; };
+		EADD1CC122EB648D009FCD1E /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EADD1CBF22EB648D009FCD1E /* Launch.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EAAEBF0422EB4A1400D779A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAAEBEE722EB4A1000D779A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAAEBEEE22EB4A1000D779A8;
+			remoteInfo = TemperJSearch;
+		};
+		EAAEBF0F22EB4A1400D779A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAAEBEE722EB4A1000D779A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAAEBEEE22EB4A1000D779A8;
+			remoteInfo = TemperJSearch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0568CB3F34DB9A90D128E192 /* Pods-TemperJSearchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TemperJSearchTests.debug.xcconfig"; path = "Target Support Files/Pods-TemperJSearchTests/Pods-TemperJSearchTests.debug.xcconfig"; sourceTree = "<group>"; };
+		178D98939C05998C354D2767 /* Pods_TemperJSearchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TemperJSearchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C7E055BAA7CD05E474B4F71 /* Pods_TemperJSearchUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TemperJSearchUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3195131D9135B6E75DB2C5EB /* Pods_TemperJSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TemperJSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40D18EF93FB0AF91EB9C0A1A /* Pods-TemperJSearchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TemperJSearchTests.release.xcconfig"; path = "Target Support Files/Pods-TemperJSearchTests/Pods-TemperJSearchTests.release.xcconfig"; sourceTree = "<group>"; };
+		5C9271C38B76EF3856E8CFAC /* Pods-TemperJSearchUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TemperJSearchUITests.release.xcconfig"; path = "Target Support Files/Pods-TemperJSearchUITests/Pods-TemperJSearchUITests.release.xcconfig"; sourceTree = "<group>"; };
+		81016DF546A5A66873E714A2 /* Pods-TemperJSearchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TemperJSearchUITests.debug.xcconfig"; path = "Target Support Files/Pods-TemperJSearchUITests/Pods-TemperJSearchUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B8FB133B91EDD00EC3C982AD /* Pods-TemperJSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TemperJSearch.debug.xcconfig"; path = "Target Support Files/Pods-TemperJSearch/Pods-TemperJSearch.debug.xcconfig"; sourceTree = "<group>"; };
+		E775651A02D3D9A071694BCC /* Pods-TemperJSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TemperJSearch.release.xcconfig"; path = "Target Support Files/Pods-TemperJSearch/Pods-TemperJSearch.release.xcconfig"; sourceTree = "<group>"; };
+		EAAEBEEF22EB4A1000D779A8 /* RuchiraM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RuchiraM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAAEBEF222EB4A1000D779A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EAAEBEF922EB4A1400D779A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EAAEBEFE22EB4A1400D779A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAAEBF0322EB4A1400D779A8 /* TemperJSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TemperJSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAAEBF0922EB4A1400D779A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAAEBF0E22EB4A1400D779A8 /* TemperJSearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TemperJSearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAAEBF1222EB4A1400D779A8 /* TemperJSearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperJSearchUITests.swift; sourceTree = "<group>"; };
+		EAAEBF1422EB4A1400D779A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAAEBF2722EB500E00D779A8 /* JSTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSTableViewController.swift; sourceTree = "<group>"; };
+		EAC08ABE22EC0834004AD85E /* JSViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSViewModel.swift; sourceTree = "<group>"; };
+		EAC08AC122EC0CBB004AD85E /* TWContractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TWContractor.swift; sourceTree = "<group>"; };
+		EAC08AC422EC36D9004AD85E /* DatePickerControlViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerControlViewModel.swift; sourceTree = "<group>"; };
+		EAC08AC822EC5CA7004AD85E /* DatePickerControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerControl.swift; sourceTree = "<group>"; };
+		EAC08ACA22EC7570004AD85E /* DatePickerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerCollectionViewCell.swift; sourceTree = "<group>"; };
+		EAC08ACD22EC894F004AD85E /* TextLabelCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextLabelCollectionViewCell.swift; sourceTree = "<group>"; };
+		EAC08ACF22EC9B3E004AD85E /* CardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
+		EAC08AD122ECAC28004AD85E /* JSCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSCardTableViewCell.swift; sourceTree = "<group>"; };
+		EAC08AD422ECB4F5004AD85E /* ICNLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICNLabel.swift; sourceTree = "<group>"; };
+		EAC08AD622ED3CBE004AD85E /* JSTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSTableViewHeader.swift; sourceTree = "<group>"; };
+		EAC08AD822ED47A1004AD85E /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Launch.strings; sourceTree = "<group>"; };
+		EAC08ADA22ED47EE004AD85E /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EAC08ADD22ED47F4004AD85E /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EAC08ADE22EDB1FF004AD85E /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		EAC08AE122EDF3E4004AD85E /* TWServerClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TWServerClient.swift; sourceTree = "<group>"; };
+		EAC08AE322EDFC12004AD85E /* TWDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TWDate.swift; sourceTree = "<group>"; };
+		EAC08AE522EDFC9E004AD85E /* TWLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TWLocation.swift; sourceTree = "<group>"; };
+		EAC08AE722EDFD39004AD85E /* TWClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TWClient.swift; sourceTree = "<group>"; };
+		EAC08AE922EDFD9A004AD85E /* TWPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TWPhoto.swift; sourceTree = "<group>"; };
+		EAC08AEB22EDFEAA004AD85E /* TWJobCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TWJobCategory.swift; sourceTree = "<group>"; };
+		EAC08AED22EDFF28004AD85E /* TWShift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TWShift.swift; sourceTree = "<group>"; };
+		EAC08AEF22EE087E004AD85E /* TWResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TWResponse.swift; sourceTree = "<group>"; };
+		EAC08AF122EEC4F5004AD85E /* JSViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSViewModelTests.swift; sourceTree = "<group>"; };
+		EAC08AF322EEC549004AD85E /* DatePickerControlViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerControlViewModelTests.swift; sourceTree = "<group>"; };
+		EAC08AF722EECA4B004AD85E /* TWShift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TWShift.swift; sourceTree = "<group>"; };
+		EAC08AF922EECA5E004AD85E /* TWJobCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TWJobCategory.swift; sourceTree = "<group>"; };
+		EAC08AFB22EECA74004AD85E /* TWContractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TWContractor.swift; sourceTree = "<group>"; };
+		EAC08AFD22EECA80004AD85E /* TWDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TWDate.swift; sourceTree = "<group>"; };
+		EAC08AFF22EECA93004AD85E /* TWLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TWLocation.swift; sourceTree = "<group>"; };
+		EAC08B0122EECAA2004AD85E /* TWClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TWClient.swift; sourceTree = "<group>"; };
+		EAC08B0322EECAB2004AD85E /* TWPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TWPhoto.swift; sourceTree = "<group>"; };
+		EAC08B0522EED56E004AD85E /* MockTWServerClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTWServerClient.swift; sourceTree = "<group>"; };
+		EADD1CC022EB648D009FCD1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Launch.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EAAEBEEC22EB4A1000D779A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E4C3C4D79397A64758B2069 /* Pods_TemperJSearch.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAAEBF0022EB4A1400D779A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38E7DFB3B3C0E20B9C62FC06 /* Pods_TemperJSearchTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAAEBF0B22EB4A1400D779A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E89D692DE5BEB4121ADD825D /* Pods_TemperJSearchUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18E3EF66EB18C27B09C8E570 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3195131D9135B6E75DB2C5EB /* Pods_TemperJSearch.framework */,
+				178D98939C05998C354D2767 /* Pods_TemperJSearchTests.framework */,
+				1C7E055BAA7CD05E474B4F71 /* Pods_TemperJSearchUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		276AA5490FE7EA93EE521B1C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B8FB133B91EDD00EC3C982AD /* Pods-TemperJSearch.debug.xcconfig */,
+				E775651A02D3D9A071694BCC /* Pods-TemperJSearch.release.xcconfig */,
+				0568CB3F34DB9A90D128E192 /* Pods-TemperJSearchTests.debug.xcconfig */,
+				40D18EF93FB0AF91EB9C0A1A /* Pods-TemperJSearchTests.release.xcconfig */,
+				81016DF546A5A66873E714A2 /* Pods-TemperJSearchUITests.debug.xcconfig */,
+				5C9271C38B76EF3856E8CFAC /* Pods-TemperJSearchUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EAAEBEE622EB4A1000D779A8 = {
+			isa = PBXGroup;
+			children = (
+				EAAEBEF122EB4A1000D779A8 /* TemperJSearch */,
+				EAAEBF0622EB4A1400D779A8 /* TemperJSearchTests */,
+				EAAEBF1122EB4A1400D779A8 /* TemperJSearchUITests */,
+				EAAEBEF022EB4A1000D779A8 /* Products */,
+				276AA5490FE7EA93EE521B1C /* Pods */,
+				18E3EF66EB18C27B09C8E570 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EAAEBEF022EB4A1000D779A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EAAEBEEF22EB4A1000D779A8 /* RuchiraM.app */,
+				EAAEBF0322EB4A1400D779A8 /* TemperJSearchTests.xctest */,
+				EAAEBF0E22EB4A1400D779A8 /* TemperJSearchUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EAAEBEF122EB4A1000D779A8 /* TemperJSearch */ = {
+			isa = PBXGroup;
+			children = (
+				EAC08AE022EDF33C004AD85E /* Network */,
+				EAAEBF2022EB4A9300D779A8 /* Common */,
+				EAC08AC022EC0CA8004AD85E /* Models */,
+				EAAEBF2622EB4FD600D779A8 /* JobSearch */,
+				EAAEBEF222EB4A1000D779A8 /* AppDelegate.swift */,
+				EAAEBEF922EB4A1400D779A8 /* Assets.xcassets */,
+				EAAEBEFE22EB4A1400D779A8 /* Info.plist */,
+				EADD1CBF22EB648D009FCD1E /* Launch.storyboard */,
+				EAC08AD922ED47EE004AD85E /* Localizable.strings */,
+			);
+			path = TemperJSearch;
+			sourceTree = "<group>";
+		};
+		EAAEBF0622EB4A1400D779A8 /* TemperJSearchTests */ = {
+			isa = PBXGroup;
+			children = (
+				EAC08AF622EEC57F004AD85E /* ModelExtensions */,
+				EAC08AF522EEC575004AD85E /* Mocks */,
+				EAAEBF0922EB4A1400D779A8 /* Info.plist */,
+				EAC08AF122EEC4F5004AD85E /* JSViewModelTests.swift */,
+				EAC08AF322EEC549004AD85E /* DatePickerControlViewModelTests.swift */,
+			);
+			path = TemperJSearchTests;
+			sourceTree = "<group>";
+		};
+		EAAEBF1122EB4A1400D779A8 /* TemperJSearchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EAAEBF1222EB4A1400D779A8 /* TemperJSearchUITests.swift */,
+				EAAEBF1422EB4A1400D779A8 /* Info.plist */,
+			);
+			path = TemperJSearchUITests;
+			sourceTree = "<group>";
+		};
+		EAAEBF2022EB4A9300D779A8 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				EAAEBF2122EB4A9D00D779A8 /* UI */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		EAAEBF2122EB4A9D00D779A8 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				EAC08AD322ECB366004AD85E /* ICNLabel */,
+				EAC08ACC22EC892E004AD85E /* Cells */,
+				EAC08AC322EC36C0004AD85E /* DatePicker */,
+				EAC08ADE22EDB1FF004AD85E /* ShadowView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		EAAEBF2622EB4FD600D779A8 /* JobSearch */ = {
+			isa = PBXGroup;
+			children = (
+				EAAEBF2722EB500E00D779A8 /* JSTableViewController.swift */,
+				EAC08AD622ED3CBE004AD85E /* JSTableViewHeader.swift */,
+				EAC08ABE22EC0834004AD85E /* JSViewModel.swift */,
+				EAC08AD122ECAC28004AD85E /* JSCardTableViewCell.swift */,
+			);
+			path = JobSearch;
+			sourceTree = "<group>";
+		};
+		EAC08AC022EC0CA8004AD85E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EAC08AC122EC0CBB004AD85E /* TWContractor.swift */,
+				EAC08AE322EDFC12004AD85E /* TWDate.swift */,
+				EAC08AE522EDFC9E004AD85E /* TWLocation.swift */,
+				EAC08AE722EDFD39004AD85E /* TWClient.swift */,
+				EAC08AE922EDFD9A004AD85E /* TWPhoto.swift */,
+				EAC08AEB22EDFEAA004AD85E /* TWJobCategory.swift */,
+				EAC08AED22EDFF28004AD85E /* TWShift.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EAC08AC322EC36C0004AD85E /* DatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				EAC08AC422EC36D9004AD85E /* DatePickerControlViewModel.swift */,
+				EAC08AC822EC5CA7004AD85E /* DatePickerControl.swift */,
+				EAC08ACA22EC7570004AD85E /* DatePickerCollectionViewCell.swift */,
+			);
+			path = DatePicker;
+			sourceTree = "<group>";
+		};
+		EAC08ACC22EC892E004AD85E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				EAC08ACD22EC894F004AD85E /* TextLabelCollectionViewCell.swift */,
+				EAC08ACF22EC9B3E004AD85E /* CardTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		EAC08AD322ECB366004AD85E /* ICNLabel */ = {
+			isa = PBXGroup;
+			children = (
+				EAC08AD422ECB4F5004AD85E /* ICNLabel.swift */,
+			);
+			path = ICNLabel;
+			sourceTree = "<group>";
+		};
+		EAC08AE022EDF33C004AD85E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EAC08AE122EDF3E4004AD85E /* TWServerClient.swift */,
+				EAC08AEF22EE087E004AD85E /* TWResponse.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		EAC08AF522EEC575004AD85E /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				EAC08B0522EED56E004AD85E /* MockTWServerClient.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		EAC08AF622EEC57F004AD85E /* ModelExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				EAC08AFB22EECA74004AD85E /* TWContractor.swift */,
+				EAC08AFD22EECA80004AD85E /* TWDate.swift */,
+				EAC08AFF22EECA93004AD85E /* TWLocation.swift */,
+				EAC08B0122EECAA2004AD85E /* TWClient.swift */,
+				EAC08B0322EECAB2004AD85E /* TWPhoto.swift */,
+				EAC08AF922EECA5E004AD85E /* TWJobCategory.swift */,
+				EAC08AF722EECA4B004AD85E /* TWShift.swift */,
+			);
+			path = ModelExtensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EAAEBEEE22EB4A1000D779A8 /* TemperJSearch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAAEBF1722EB4A1400D779A8 /* Build configuration list for PBXNativeTarget "TemperJSearch" */;
+			buildPhases = (
+				C7532B459C863ACF038EE1C9 /* [CP] Check Pods Manifest.lock */,
+				EAAEBEEB22EB4A1000D779A8 /* Sources */,
+				EAAEBEEC22EB4A1000D779A8 /* Frameworks */,
+				EAAEBEED22EB4A1000D779A8 /* Resources */,
+				047BC3EECCADF7D1A92FA02A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TemperJSearch;
+			productName = TemperJSearch;
+			productReference = EAAEBEEF22EB4A1000D779A8 /* RuchiraM.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EAAEBF0222EB4A1400D779A8 /* TemperJSearchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAAEBF1A22EB4A1400D779A8 /* Build configuration list for PBXNativeTarget "TemperJSearchTests" */;
+			buildPhases = (
+				CAB8F52304F64856B5482107 /* [CP] Check Pods Manifest.lock */,
+				EAAEBEFF22EB4A1400D779A8 /* Sources */,
+				EAAEBF0022EB4A1400D779A8 /* Frameworks */,
+				EAAEBF0122EB4A1400D779A8 /* Resources */,
+				58DCF7099FE5673ABF81E31B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAAEBF0522EB4A1400D779A8 /* PBXTargetDependency */,
+			);
+			name = TemperJSearchTests;
+			productName = TemperJSearchTests;
+			productReference = EAAEBF0322EB4A1400D779A8 /* TemperJSearchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EAAEBF0D22EB4A1400D779A8 /* TemperJSearchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAAEBF1D22EB4A1400D779A8 /* Build configuration list for PBXNativeTarget "TemperJSearchUITests" */;
+			buildPhases = (
+				91E67EBD89506EE78914FCBE /* [CP] Check Pods Manifest.lock */,
+				EAAEBF0A22EB4A1400D779A8 /* Sources */,
+				EAAEBF0B22EB4A1400D779A8 /* Frameworks */,
+				EAAEBF0C22EB4A1400D779A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAAEBF1022EB4A1400D779A8 /* PBXTargetDependency */,
+			);
+			name = TemperJSearchUITests;
+			productName = TemperJSearchUITests;
+			productReference = EAAEBF0E22EB4A1400D779A8 /* TemperJSearchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EAAEBEE722EB4A1000D779A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = RuchiraM;
+				TargetAttributes = {
+					EAAEBEEE22EB4A1000D779A8 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					EAAEBF0222EB4A1400D779A8 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = EAAEBEEE22EB4A1000D779A8;
+					};
+					EAAEBF0D22EB4A1400D779A8 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = EAAEBEEE22EB4A1000D779A8;
+					};
+				};
+			};
+			buildConfigurationList = EAAEBEEA22EB4A1000D779A8 /* Build configuration list for PBXProject "TWRuchiraM" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				nl,
+			);
+			mainGroup = EAAEBEE622EB4A1000D779A8;
+			productRefGroup = EAAEBEF022EB4A1000D779A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EAAEBEEE22EB4A1000D779A8 /* TemperJSearch */,
+				EAAEBF0222EB4A1400D779A8 /* TemperJSearchTests */,
+				EAAEBF0D22EB4A1400D779A8 /* TemperJSearchUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EAAEBEED22EB4A1000D779A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAAEBEFA22EB4A1400D779A8 /* Assets.xcassets in Resources */,
+				EAC08ADB22ED47EE004AD85E /* Localizable.strings in Resources */,
+				EADD1CC122EB648D009FCD1E /* Launch.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAAEBF0122EB4A1400D779A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAAEBF0C22EB4A1400D779A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		047BC3EECCADF7D1A92FA02A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TemperJSearch/Pods-TemperJSearch-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TemperJSearch/Pods-TemperJSearch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58DCF7099FE5673ABF81E31B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TemperJSearchTests/Pods-TemperJSearchTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
+				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TemperJSearchTests/Pods-TemperJSearchTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91E67EBD89506EE78914FCBE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TemperJSearchUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7532B459C863ACF038EE1C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TemperJSearch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CAB8F52304F64856B5482107 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TemperJSearchTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EAAEBEEB22EB4A1000D779A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAC08ACE22EC894F004AD85E /* TextLabelCollectionViewCell.swift in Sources */,
+				EAC08AE422EDFC12004AD85E /* TWDate.swift in Sources */,
+				EAC08AE622EDFC9E004AD85E /* TWLocation.swift in Sources */,
+				EAC08AEA22EDFD9A004AD85E /* TWPhoto.swift in Sources */,
+				EAC08AEE22EDFF28004AD85E /* TWShift.swift in Sources */,
+				EAC08ACB22EC7570004AD85E /* DatePickerCollectionViewCell.swift in Sources */,
+				EAC08AC222EC0CBB004AD85E /* TWContractor.swift in Sources */,
+				EAC08AD722ED3CBE004AD85E /* JSTableViewHeader.swift in Sources */,
+				EAAEBF2822EB500E00D779A8 /* JSTableViewController.swift in Sources */,
+				EAC08AD222ECAC28004AD85E /* JSCardTableViewCell.swift in Sources */,
+				EAC08AC922EC5CA7004AD85E /* DatePickerControl.swift in Sources */,
+				EAC08AEC22EDFEAA004AD85E /* TWJobCategory.swift in Sources */,
+				EAC08AC522EC36D9004AD85E /* DatePickerControlViewModel.swift in Sources */,
+				EAAEBEF322EB4A1000D779A8 /* AppDelegate.swift in Sources */,
+				EAC08AF022EE087E004AD85E /* TWResponse.swift in Sources */,
+				EAC08AE822EDFD39004AD85E /* TWClient.swift in Sources */,
+				EAC08AE222EDF3E4004AD85E /* TWServerClient.swift in Sources */,
+				EAC08AD022EC9B3E004AD85E /* CardTableViewCell.swift in Sources */,
+				EAC08ADF22EDB1FF004AD85E /* ShadowView.swift in Sources */,
+				EAC08AD522ECB4F5004AD85E /* ICNLabel.swift in Sources */,
+				EAC08ABF22EC0834004AD85E /* JSViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAAEBEFF22EB4A1400D779A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAC08AF822EECA4B004AD85E /* TWShift.swift in Sources */,
+				EAC08AFE22EECA80004AD85E /* TWDate.swift in Sources */,
+				EAC08AF222EEC4F5004AD85E /* JSViewModelTests.swift in Sources */,
+				EAC08AFA22EECA5E004AD85E /* TWJobCategory.swift in Sources */,
+				EAC08B0422EECAB2004AD85E /* TWPhoto.swift in Sources */,
+				EAC08B0222EECAA2004AD85E /* TWClient.swift in Sources */,
+				EAC08AF422EEC549004AD85E /* DatePickerControlViewModelTests.swift in Sources */,
+				EAC08AFC22EECA74004AD85E /* TWContractor.swift in Sources */,
+				EAC08B0022EECA93004AD85E /* TWLocation.swift in Sources */,
+				EAC08B0622EED56E004AD85E /* MockTWServerClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAAEBF0A22EB4A1400D779A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAAEBF1322EB4A1400D779A8 /* TemperJSearchUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EAAEBF0522EB4A1400D779A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAAEBEEE22EB4A1000D779A8 /* TemperJSearch */;
+			targetProxy = EAAEBF0422EB4A1400D779A8 /* PBXContainerItemProxy */;
+		};
+		EAAEBF1022EB4A1400D779A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAAEBEEE22EB4A1000D779A8 /* TemperJSearch */;
+			targetProxy = EAAEBF0F22EB4A1400D779A8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EAC08AD922ED47EE004AD85E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAC08ADA22ED47EE004AD85E /* Base */,
+				EAC08ADD22ED47F4004AD85E /* nl */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		EADD1CBF22EB648D009FCD1E /* Launch.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EADD1CC022EB648D009FCD1E /* Base */,
+				EAC08AD822ED47A1004AD85E /* nl */,
+			);
+			name = Launch.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EAAEBF1522EB4A1400D779A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EAAEBF1622EB4A1400D779A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EAAEBF1822EB4A1400D779A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8FB133B91EDD00EC3C982AD /* Pods-TemperJSearch.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2NXTY6D3JX;
+				INFOPLIST_FILE = TemperJSearch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruchiram.TemperJSearch;
+				PRODUCT_MODULE_NAME = TemperJSearch;
+				PRODUCT_NAME = RuchiraM;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EAAEBF1922EB4A1400D779A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E775651A02D3D9A071694BCC /* Pods-TemperJSearch.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2NXTY6D3JX;
+				INFOPLIST_FILE = TemperJSearch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruchiram.TemperJSearch;
+				PRODUCT_MODULE_NAME = TemperJSearch;
+				PRODUCT_NAME = RuchiraM;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EAAEBF1B22EB4A1400D779A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0568CB3F34DB9A90D128E192 /* Pods-TemperJSearchTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2NXTY6D3JX;
+				INFOPLIST_FILE = TemperJSearchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruchiram.TemperJSearchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RuchiraM.app/RuchiraM";
+			};
+			name = Debug;
+		};
+		EAAEBF1C22EB4A1400D779A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40D18EF93FB0AF91EB9C0A1A /* Pods-TemperJSearchTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2NXTY6D3JX;
+				INFOPLIST_FILE = TemperJSearchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruchiram.TemperJSearchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RuchiraM.app/RuchiraM";
+			};
+			name = Release;
+		};
+		EAAEBF1E22EB4A1400D779A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81016DF546A5A66873E714A2 /* Pods-TemperJSearchUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2NXTY6D3JX;
+				INFOPLIST_FILE = TemperJSearchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruchiram.TemperJSearchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TemperJSearch;
+			};
+			name = Debug;
+		};
+		EAAEBF1F22EB4A1400D779A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C9271C38B76EF3856E8CFAC /* Pods-TemperJSearchUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2NXTY6D3JX;
+				INFOPLIST_FILE = TemperJSearchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruchiram.TemperJSearchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TemperJSearch;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EAAEBEEA22EB4A1000D779A8 /* Build configuration list for PBXProject "TWRuchiraM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAAEBF1522EB4A1400D779A8 /* Debug */,
+				EAAEBF1622EB4A1400D779A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAAEBF1722EB4A1400D779A8 /* Build configuration list for PBXNativeTarget "TemperJSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAAEBF1822EB4A1400D779A8 /* Debug */,
+				EAAEBF1922EB4A1400D779A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAAEBF1A22EB4A1400D779A8 /* Build configuration list for PBXNativeTarget "TemperJSearchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAAEBF1B22EB4A1400D779A8 /* Debug */,
+				EAAEBF1C22EB4A1400D779A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAAEBF1D22EB4A1400D779A8 /* Build configuration list for PBXNativeTarget "TemperJSearchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAAEBF1E22EB4A1400D779A8 /* Debug */,
+				EAAEBF1F22EB4A1400D779A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EAAEBEE722EB4A1000D779A8 /* Project object */;
+}

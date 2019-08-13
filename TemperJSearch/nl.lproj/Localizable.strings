@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  TemperJSearch
+
+  Created by Ruchira Munidasa on 28/07/2019.
+  Copyright © 2019 RuchiraM. All rights reserved.
+*/
+
+"Work with pleasure." = "Werken met plezier.";
+"Always." = "Altijd.";
+"Shifts in your area" = "Shifts bij jou in de buurt";
+"Shifts avaialble all across the country attributed heading" = "<p style=\"color: #606060\; font-size: 14px\; font-family: -apple-system\;\">332 shifts in <span style=\"color: #5b53a1\;font-weight: bold\;\">13 functies</span> binnen <span style=\"color: #5b53a1\;font-weight: bold\;\">alle afstanden</span><p>";
+"Shifts avaialble all across the country simple heading" = "Jobs in many cities all across the country";

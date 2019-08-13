@@ -9,7 +9,7 @@
 import UIKit
 import SnapKit
 
-class TextLabelCollectionViewCell: UICollectionViewCell {
+class RMTextLabelCollectionViewCell: UICollectionViewCell {
     
     var textLabel: UILabel?
     

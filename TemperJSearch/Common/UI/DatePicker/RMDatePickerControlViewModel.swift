@@ -9,7 +9,7 @@
 import Foundation
 import RxRelay
 
-class DatePickerControlViewModel {
+class RMDatePickerControlViewModel {
     
     // initializing date formatter can be a processer intensive operation
     // keep a single instance

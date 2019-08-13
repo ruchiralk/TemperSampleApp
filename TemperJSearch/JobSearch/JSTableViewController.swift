@@ -15,8 +15,8 @@ import SnapKit
 
 class JSTableViewController: UITableViewController {
 
-    private lazy var datePickerControl : DatePickerControl = {
-        let datePicker = DatePickerControl()
+    private lazy var datePickerControl : RMDatePickerControl = {
+        let datePicker = RMDatePickerControl()
         datePicker.backgroundColor = UIColor.white
         return datePicker
     }()
@@ -109,7 +109,7 @@ class JSTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        return datePickerControl.intialize(cellType: DatePickerCollectionViewCell.self, itemSize: CGSize(width: 90, height: datePickerHeight - 30))
+        return datePickerControl.intialize(cellType: RMDatePickerCollectionViewCell.self, itemSize: CGSize(width: 90, height: datePickerHeight - 30))
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

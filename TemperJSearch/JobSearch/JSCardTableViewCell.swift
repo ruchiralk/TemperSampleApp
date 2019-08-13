@@ -9,7 +9,7 @@
 import UIKit
 import SnapKit
 
-class JSCardTableViewCell: CardTableViewCell {
+class JSCardTableViewCell: RMCardTableViewCell {
     
     static let reuseIdentifier = "JSCardTableViewCell"
     static let headerViewHeight: CGFloat = 192.0
@@ -18,8 +18,8 @@ class JSCardTableViewCell: CardTableViewCell {
         return headerViewHeight + footerViewHeight
     }
     
-    lazy var ratingLabel: ICNLabel = {
-        let label = ICNLabel(frame: .zero)
+    lazy var ratingLabel: RMICNLabel = {
+        let label = RMICNLabel(frame: .zero)
         label.textLabel.text = "4.9"
         label.startIcon.image = UIImage(named: "Rating")
         label.textLabel.font = UIFont.systemFont(ofSize: 15.0, weight: .heavy)
@@ -43,8 +43,8 @@ class JSCardTableViewCell: CardTableViewCell {
         return label
     }()
     
-    lazy var registrationsLabel: ICNLabel = {
-        let label = ICNLabel(frame: .zero)
+    lazy var registrationsLabel: RMICNLabel = {
+        let label = RMICNLabel(frame: .zero)
         label.textLabel.text = "1 aanmelding"
         label.startIcon.image = UIImage(named: "Users")
         label.textLabel.font = UIFont.systemFont(ofSize: 12, weight: .ultraLight)
@@ -52,8 +52,8 @@ class JSCardTableViewCell: CardTableViewCell {
         return label
     }()
     
-    lazy var startingTimeLabel: ICNLabel = {
-        let label = ICNLabel(frame: .zero)
+    lazy var startingTimeLabel: RMICNLabel = {
+        let label = RMICNLabel(frame: .zero)
         label.textLabel.font = UIFont.systemFont(ofSize: 13.0, weight: .light)
         label.textLabel.text = "09.00 (6u)"
         label.startIcon.image = UIImage(named: "Clock")
@@ -69,8 +69,8 @@ class JSCardTableViewCell: CardTableViewCell {
         return imageView
     }()
     
-    lazy var distanceLabel: ICNLabel = {
-        let label = ICNLabel(frame: .zero)
+    lazy var distanceLabel: RMICNLabel = {
+        let label = RMICNLabel(frame: .zero)
         label.textLabel.textColor = UIColor.white
         label.textLabel.text = "9 km"
         label.textLabel.font = UIFont.systemFont(ofSize: 14.0, weight: .medium)
@@ -102,7 +102,7 @@ class JSCardTableViewCell: CardTableViewCell {
         self.cardView.footerView.addSubview(startingTimeLabel)
         
         let shadowColor = UIColor(red: 225.0/255, green: 225.0/255, blue: 225.0/255, alpha: 1.0)
-        ShadowView.addShadow(toView: self.cardView, radius: 1, color: shadowColor, offset: CGSize(width: 3, height: 3), opacity: 1)
+        RMShadowView.addShadow(toView: self.cardView, radius: 1, color: shadowColor, offset: CGSize(width: 3, height: 3), opacity: 1)
     }
     
     override func configureLayout() {

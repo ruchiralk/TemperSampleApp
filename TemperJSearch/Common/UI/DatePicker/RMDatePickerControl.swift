@@ -9,12 +9,12 @@
 import UIKit
 import RxRelay
 
-class DatePickerControl : NSObject {
+class RMDatePickerControl : NSObject {
     
     private let reuseIdentifier = "DatePickerCell"
     private let collectionView: UICollectionView
     private let flowLayout: UICollectionViewFlowLayout
-    private let viewModel = DatePickerControlViewModel()
+    private let viewModel = RMDatePickerControlViewModel()
     var backgroundColor = UIColor.white {
         didSet{
             collectionView.backgroundColor = backgroundColor
@@ -46,7 +46,7 @@ class DatePickerControl : NSObject {
     }
 }
 
-extension DatePickerControl : UICollectionViewDataSource, UICollectionViewDelegate {
+extension RMDatePickerControl : UICollectionViewDataSource, UICollectionViewDelegate {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
@@ -57,7 +57,7 @@ extension DatePickerControl : UICollectionViewDataSource, UICollectionViewDelega
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as? DatePickerCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as? RMDatePickerCollectionViewCell
         if let date = viewModel.dateFromCurrentDate(ahead: indexPath.row) {
             cell?.textLabel?.text = viewModel.dateStringInMMMDFormat(date: date)
         }

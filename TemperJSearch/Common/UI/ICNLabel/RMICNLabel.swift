@@ -9,7 +9,7 @@
 import UIKit
 import SnapKit
 
-class ICNLabel: UIView {
+class RMICNLabel: UIView {
     
     lazy var startIcon: UIImageView = {
         let imageView = UIImageView()

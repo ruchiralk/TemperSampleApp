@@ -9,7 +9,7 @@
 import UIKit
 import SnapKit
 
-class ShadowView: UIView {
+class RMShadowView: UIView {
 
     private init(radius: CGFloat, color: UIColor, offset: CGSize,opacity: Float, shouldRasterize: Bool) {
         super.init(frame: .zero)
@@ -31,7 +31,7 @@ class ShadowView: UIView {
     }
     
     static func addShadow(toView parent: UIView, radius: CGFloat, color: UIColor, offset: CGSize,opacity: Float, shouldRasterize: Bool = true){
-        let view = ShadowView(radius: radius, color: color, offset: offset, opacity: opacity, shouldRasterize: shouldRasterize)
+        let view = RMShadowView(radius: radius, color: color, offset: offset, opacity: opacity, shouldRasterize: shouldRasterize)
         parent.addSubview(view)
         parent.sendSubviewToBack(view)
         view.snp.makeConstraints { (make) in

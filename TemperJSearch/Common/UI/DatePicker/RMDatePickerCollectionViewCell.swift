@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol DatePickerCellStyle : UICollectionViewCell  {
+protocol RMDatePickerCellStyle : UICollectionViewCell  {
     
     var cornerRadius: CGFloat { get }
     var borderWidth: CGFloat { get }
@@ -20,7 +20,7 @@ protocol DatePickerCellStyle : UICollectionViewCell  {
     var selectedTextColor: UIColor { get }
 }
 
-class DatePickerCollectionViewCell : TextLabelCollectionViewCell, DatePickerCellStyle {
+class RMDatePickerCollectionViewCell : RMTextLabelCollectionViewCell, RMDatePickerCellStyle {
     
     override var isSelected: Bool {
         didSet{
@@ -63,7 +63,7 @@ class DatePickerCollectionViewCell : TextLabelCollectionViewCell, DatePickerCell
 
 // define default date picker styles
 // you can always customize by subclassing
-extension DatePickerCellStyle {
+extension RMDatePickerCellStyle {
     
     var cornerRadius: CGFloat {
         return self.bounds.height/2

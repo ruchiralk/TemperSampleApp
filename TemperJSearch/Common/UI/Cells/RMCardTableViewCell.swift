@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CardTableViewCell : UITableViewCell {
+class RMCardTableViewCell : UITableViewCell {
     
     lazy var cardView: CardView = {
         let cardView = CardView(frame: .zero)
